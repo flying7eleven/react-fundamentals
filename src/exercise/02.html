@@ -7,13 +7,15 @@
   <script type="module">
     const rootElement = document.getElementById('root')
 
-    const hello = React.createElement('span', {key: 'hello', children: 'Hello'});
-    const world = React.createElement('span', {key: 'world', children: 'World'});
+    const hello = React.createElement('span', {key: 'hello', children: 'Hello'})
+    const world = React.createElement('span', {key: 'world', children: 'World'})
 
-    const containerElement = React.createElement('div', {class: 'container', key: 'container', children: [hello, world]})
-
+    const containerElement = React.createElement('div', {
+      class: 'container',
+      key: 'container',
+      children: [hello, world],
+    })
 
     ReactDOM.render(containerElement, rootElement)
-
   </script>
 </body>
